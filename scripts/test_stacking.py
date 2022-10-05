@@ -39,6 +39,7 @@ if __name__ == "__main__":
         result = stack_blocks_client()
         if (not result.success):
             print("Stacking failed...resetting environment")
+            reset_client()
 
         yes_no = input("Do you want to continue (y/n)...? ")
         if yes_no == "n":
