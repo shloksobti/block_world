@@ -23,4 +23,4 @@ goal:
  ```
  This will stack Block2 on top of Block1.
  
- To reset scene: `rosservice call block_world /reset`
+ To reset scene: `rosservice call /reset`
