@@ -60,4 +60,9 @@
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
     <node type="rviz" name="rviz" pkg="rviz" args="-d $(find block_world)/launch/block_world.rviz" />
+
+
+  <!-- Run the main stacking node to advertize services -->
+  <arg name="node_start_delay" default="1.0" />
+  <node name="block_world_node" pkg="block_world" type="block_world_node" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
 </launch>
