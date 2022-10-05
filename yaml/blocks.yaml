@@ -8,7 +8,7 @@ world:
   collision_objects:
     - id: table_right
       meshes:
-        - resource: "package://robowflex_resources/objects/cafe_table.dae"
+        - resource: "package://block_world/meshes/cafe_table.dae"
           dimensions: [0.025, 0.025, 0.025]
       mesh_poses:
         - position: [0.7, 0.0, -0.3]
