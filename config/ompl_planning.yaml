@@ -150,7 +150,7 @@ panda_arm:
     - SPARStwokConfigDefault
     - TrajOptDefault
   projection_evaluator: link(panda_link8)
-panda_arm_hand:
+panda_manipulator:
   planner_configs:
     - SBLkConfigDefault
     - ESTkConfigDefault

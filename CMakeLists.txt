@@ -51,3 +51,7 @@ target_link_libraries(StackBlocks ${catkin_LIBRARIES})
 
 add_executable(block_world_node scripts/block_world.cpp)
 target_link_libraries(block_world_node ${catkin_LIBRARIES} StackBlocks)
+
+catkin_install_python(PROGRAMS scripts/test_stacking.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
